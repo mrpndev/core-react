@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App() { // root app component
   return (
-    <div className="App">
+    <div className="App"> {/* JSX attributes */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
