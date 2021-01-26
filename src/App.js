@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
 
 function App() { // root app component
+  const name = "Paul" // JS above return injected into JSX with { }
+                      // can also use JS if outside elements
   return (
-    <div className="App"> {/* JSX attributes */}
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div className="App">
+    //   <h1>Welcome to React, {name}</h1>
+    //   <h2>Single Page Application</h2>
+    // </div>
+    <div className="container">
+      <Header />
     </div>
+
   );
 }
 
+// module.exports = App;
 export default App;
